@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkslategray;
+  color: white;
+}
+
+h1 {
+  background-color: blanchedalmond;
+  width: 50%;
+  height: 100px;
+  padding: 20px;
+}
+
+a {
+  color: white;
+  background-color: brown;
+  width: 50%;
+  height: 100px;
+  /* padding: 20px;*/
+}
+
+.box {
+  background-color: chocolate;
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 40px;
+}
+
+p {
+  color: red;
+}
+
+.box > p {
+  color: yellow;
+}
+
+.circle {
+  background-color: chocolate;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border-radius: 50% 25% 10% 0;
+  outline: 10px solid red;
+  border: 10px solid green;
+}

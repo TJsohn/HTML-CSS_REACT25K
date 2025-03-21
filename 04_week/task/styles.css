@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #236847;
+  padding: 50px;
+  font-family: "Raleway", serif;
+  line-height: 2;
+  place-items: center;
+}
+
+.signup {
+  padding: 15px;
+  border-radius: 7px;
+  height: 760px;
+  width: 26%;
+  background-color: white;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  text-align: center;
+  line-height: 1.8;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.15rem;
+  text-align: center;
+  line-height: 2.5;
+  padding-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  padding: 13px;
+  margin-bottom: 20px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+button[type="submit"] {
+  width: 80%;
+  padding: 11px;
+  background-color: #fb7f50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+a {
+  color: #fb7f50;
+  text-decoration: none;
+}
+
+p.agree {
+  font-size: 14.5px;
+  text-align: center;
+  line-height: 110%;
+  margin-top: 10px;
+}
+
+span {
+  display: inline;
+}
+
+span:before {
+  content: "\a ";
+  white-space: pre;
+}
+
+p.login {
+  margin-top: 14px;
+  font-size: 18px;
+  position: relative;
+  right: 18px;
+  color: white;
+}

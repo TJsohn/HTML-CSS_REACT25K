@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Add a solid border below the header to separate it visually from the main content.
+Set a background color for the header that contrasts with the rest of the page.*/
+
+body {
+  background-color: violet;
+  color: whitesmoke;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+header {
+  background-color: indianred;
+  padding: 32px;
+  border-bottom: 2px solid greenyellow;
+}
+
+header h1 {
+  color: white;
+}
+
+section {
+  padding: 32px;
+}
+/* Style the introduction paragraph:
+Use margin and padding to space it nicely.
+Use different background color.
+Make width 25% */
+
+#introduction {
+  background-color: peru;
+  height: 25%;
+}
+
+/* For the list of hobbies or skills:
+Use margin and padding to space it nicely.
+Use different background color.
+Make width 500px */
+
+#hobbies {
+  background-color: palevioletred;
+  height: 500px;
+}
+
+ul {
+  margin-left: 20px;
+}
+/* For the About Me section:
+Place the profile picture on the left and the text on the right.
+Use padding and margins to create a clean layout.
+Add a border and background color or image to make the section stand out. */
+
+#about {
+  background-color: antiquewhite;
+  min-height: 400px;
+  background-image: url("bg.jpg");
+}
+
+#about img {
+  float: left;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+#about p {
+  float: right;
+  padding: 0 20px;
+  width: 75%;
+}
+
+/* Center the footer content using margin: auto and text alignment.
+Add padding for spacing and a background color that complements the header. */
+
+footer {
+  clear: both;
+  background-color: yellowgreen;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+/* Apply a subtle background color or gradient to the entire page.
+Add a background image to the About Me section.
+Use background-size: cover; to ensure the image covers the section properly. */

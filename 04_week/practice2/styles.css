@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkseagreen;
+  padding: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 2;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+}
+
+input {
+  width: 50%;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+div {
+  margin: 10px;
+}
