@@ -1,5 +1,6 @@
 const body = document.body;
 const overlay = document.querySelector(".overlay");
+const modal = document.querySelector(".modal");
 const modalButton = document.querySelector(".modalBtn");
 const modalCloseButton = document.querySelector(".modalCloseBtn");
 const menuToggle = document.querySelector("#menu-toggle");
@@ -49,7 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const applyTheme = (isDark) => {
   document.body.classList.toggle("dark", isDark);
-  hero.classList.toggle("dark", isDark);
+  if (hero) {
+    hero.classList.toggle("dark", isDark);
+  }
   themeToggle.textContent = isDark ? "Light 🌞" : "Dark 🌙";
   localStorage.setItem("theme", isDark ? "dark" : "light");
 };
@@ -75,9 +78,15 @@ const backToTop = () => {
   document.documentElement.scrollTop = 0;
 };
 
-backToTopBtn.addEventListener("click", backToTop);
-modalButton.addEventListener("click", displayElement);
 modalCloseButton.addEventListener("click", closeElement);
+
+modalButton.addEventListener("click", function () {
+  modal.classList.add("active");
+});
+
+modalCloseButton.addEventListener("click", function () {
+  modal.classList.remove("active");
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("section");
